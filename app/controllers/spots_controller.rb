@@ -41,6 +41,7 @@ class SpotsController < ApplicationController
   # POST /spots.json
   def create
     @spot = Spot.new(params[:spot])
+    @spot.time = Time.now;
 
     respond_to do |format|
       if @spot.save
