@@ -1,4 +1,7 @@
 SpotTheIss::Application.routes.draw do
+  resources :spots
+
+
   resources :users
 
 

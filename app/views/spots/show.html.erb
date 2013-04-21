@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @spot.id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @spot.user_id %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @spot.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @spot.lon %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @spot.comment %>
+</p>
+
+<p>
+  <b>Seen:</b>
+  <%= @spot.seen %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @spot.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_spot_path(@spot) %> |
+<%= link_to 'Back', spots_path %>
